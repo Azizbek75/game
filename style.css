@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rubik&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: lightgrey;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    top:70px;
+    left:30px;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #616161;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid grey;
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    cursor: pointer;
+}
